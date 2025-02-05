@@ -6,6 +6,17 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- BoxIcons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!-- ScrollReveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+    <!-- Typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
@@ -14,7 +25,7 @@
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#experience">Contact</a></li>
+            <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
 
@@ -27,65 +38,249 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Hi, I'm <span class="highlight">Your Name</span></h1>
-            <!-- <p>Web Developer & Designer</p> -->
-            <a href="#contact" class="cta-button">Get in Touch</a>
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-image">
+                <img src="assets/jb35493@uga.edu-0.jpg" alt="Jahnavi Priya">
+            </div>
+            <div class="hero-content">
+                <h3>Hello, I'm</h3>
+                <h1>Jahnavi Priya Bommareddy</h1>
+                <p>MS in Computer Science | Software & Data Enthusiast | Bridging AI, ML & Full-Stack Development</p>
+                <a href="#contact" class="contact-btn">Contact Me</a>
+            </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about">
-        <h2>About Me</h2>
-        <div class="about-content">
-            <div class="about-text">
-                <p>Your introduction goes here. Write about your passion for development, your journey, and what drives you.</p>
-                <div class="skills">
-                    <h3>Skills</h3>
+    <section class="about" id="about">
+        <h2 class="heading">About Me</h2>
+        <div class="about-container">
+            <div class="about-content">
+                <h3>Software Engineer & ML Enthusiast</h3>
+                <p>I am a graduate student at The University of Georgia pursuing my Master's in Computer Science. With a strong foundation in software development and machine learning, I am passionate about creating innovative solutions that bridge the gap between AI and practical applications.</p>
+                
+                <div class="education">
+                    <h3>Education</h3>
+                    <div class="edu-box">
+                        <h4>Master of Science in Computer Science</h4>
+                        <p>The University of Georgia | 2023 - 2025</p>
+                        <span>CGPA: 3.88/4.0</span>
+                    </div>
+                    <div class="edu-box">
+                        <h4>Bachelor of Technology in Electronics and Communication</h4>
+                        <p>National Institute of Technology Patna | 2019 - 2023</p>
+                        <span>CGPA: 8.83/10.0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <h2 class="heading">Experience</h2>
+        
+        <div class="experience-timeline">
+            <div class="experience-item">
+                <div class="experience-logo">
+                    <img src="assets/UGA_logo_TopShield_FC_MARCM-768x1151.png" alt="UGA Logo">
+                </div>
+                <div class="experience-content">
+                    <h3>Student Research Assistant</h3>
+                    <h4>UGA CAES-Agriculture, Leadership, Edu & Communication</h4>
+                    <p class="duration">March 2024 - May 2024</p>
                     <ul>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>JavaScript</li>
-                        <li>React</li>
-                        <li>Node.js</li>
+                        <li>Conducted data processing and statistical analyses under Dr. Peng Lu's guidance.</li>
+                        <li>Applied machine learning techniques, enhancing sentiment analysis and topic modeling accuracy by 80% on large datasets.</li>
+                        <li>Assisted in preparing results for manuscripts and collaborating on research publications.</li>
                     </ul>
+                    <!-- <div class="skills-gained">
+                        <span>Data Analysis</span>
+                        <span>Machine Learning</span>
+                        <span>Statistical Analysis</span>
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-logo">
+                    <img src="assets/download.jpeg" alt="TestAIng Solutions Logo">
+                </div>
+                <div class="experience-content">
+                    <h3>Machine Learning Intern</h3>
+                    <h4>Test AIng Solutions (AiEnsured.com)</h4>
+                    <p class="duration">January 2023 - April 2023</p>
+                    <ul>
+                        <li>Enhanced image pipeline activities, improving model explainability by 20% using advanced techniques.</li>
+                        <li>Collaborated on live video feed monitoring using an object detection model, reducing false detections by 15% and increasing overall detection accuracy by 70%.</li>
+                        <li>Increased object detection model robustness, resulting in a 40% improvement in detection accuracy.</li>
+                    </ul>
+                    <!-- <div class="skills-gained">
+                        <span>Computer Vision</span>
+                        <span>Object Detection</span>
+                        <span>Model Optimization</span>
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-logo">
+                    <img src="assets/Indian_Institute_of_Technology,_Patna.svg.png" alt="IIT Patna Logo">
+                </div>
+                <div class="experience-content">
+                    <h3>Research Intern</h3>
+                    <h4>Indian Institute of Technology Patna</h4>
+                    <p class="duration">June 2022 - July 2022</p>
+                    <ul>
+                        <li>Analyzed disaster tweets with unsupervised methods, achieving a 10% increase in information extraction accuracy using VEC.</li>
+                    </ul>
+                    <!-- <div class="skills-gained">
+                        <span>NLP</span>
+                        <span>Text Analysis</span>
+                        <span>Research</span>
+                    </div> -->
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <h2>My Projects</h2>
-        <div class="project-grid">
+    <section class="projects" id="projects">
+        <h2 class="heading">Projects</h2>
+        
+        <div class="projects-container">
+            <!-- Cinema E-Booking System -->
             <div class="project-card">
-                <img src="images/project1.jpg" alt="Project 1">
-                <h3>Project 1</h3>
-                <p>Project description goes here</p>
-                <div class="project-links">
-                    <a href="#" target="_blank">Live Demo</a>
-                    <a href="#" target="_blank">GitHub</a>
+                <div class="project-image">
+                    <img src="assets/cinema.png" alt="Cinema E-Booking System">
+                </div>
+                <div class="project-content">
+                    <h3>Cinema E-Booking System</h3>
+                    <p>Collaborated in an Agile environment to develop a web-based platform for booking movie tickets, featuring a user-friendly interface and admin panel for site management, reducing average response time by 20%.</p>
+                    <ul class="project-details">
+                        <li>Designed and integrated a MySQL database, enhancing query response efficiency by 15%.</li>
+                        <li>Implemented backend functionalities using Spring Boot and enhanced user experience through Angular.</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span>Angular</span>
+                        <span>MySQL</span>
+                        <span>Spring Boot</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="demo">Demo</a>
+                        <a href="#" class="source-code">Source Code</a>
+                    </div>
                 </div>
             </div>
-            <!-- Add more project cards as needed -->
+
+            <!-- Red-Teaming Attacks -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/llmimg.png" alt="Red-Teaming Attacks">
+                </div>
+                <div class="project-content">
+                    <h3>Red-Teaming Attacks on LLM Agents</h3>
+                    <p>Designed and executed prompt injection attacks on LLM agents (Cactus and PaperQA), achieving a 50% attack success rate on Cactus and 40% success rate on PaperQA by bypassing tool restrictions.</p>
+                    <ul class="project-details">
+                        <li>Conducted agent profiling, crafted adversarial prompts, and refined attacks using JailJudge and custom datasets.</li>
+                        <li>Earned a 91.3% evaluation grade through systematic vulnerability assessment.</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span>LLM Agents</span>
+                        <span>Red Teaming</span>
+                        <span>Vulnerability Analysis</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="demo">Demo</a>
+                        <a href="#" class="source-code">Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Brain Tumor Classification -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/brain.webp" alt="Brain Tumor Classification">
+                </div>
+                <div class="project-content">
+                    <h3>Brain Tumor Classification</h3>
+                    <p>Devised a Convolutional Neural Network (CNN) model for image classification, detection, and segmentation.</p>
+                    <ul class="project-details">
+                        <li>Leveraged TensorFlow's Image Data Generator to augment data, enhancing model robustness by 15%.</li>
+                        <li>Achieved high accuracy rate with Adam optimizer, reducing training time by 35%.</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Keras</span>
+                        <span>TensorFlow</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="demo">Demo</a>
+                        <a href="#" class="source-code">Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bike Store Management System -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/adventurebikes-1614973137.avif" alt="Bike Store Management">
+                </div>
+                <div class="project-content">
+                    <h3>Bike Store Management System</h3>
+                    <p>Built a web-based application for managing customer orders, staff data, and inventory, decreasing manual processing efforts by 20%.</p>
+                    <ul class="project-details">
+                        <li>Designed and implemented a normalized database schema (BCNF, 3NF), reducing redundancy by 30%.</li>
+                        <li>Integrated MySQL with Django, boosting overall application speed by 15%.</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span>Django</span>
+                        <span>MySQL</span>
+                        <span>Python</span>
+                        <span>HTML</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="demo">Demo</a>
+                        <a href="#" class="source-code">Source Code</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
+
     <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <h2>Get in Touch</h2>
-        <div class="contact-content">
-            <form id="contact-form">
-                <input type="text" placeholder="Name" required>
-                <input type="email" placeholder="Email" required>
-                <textarea placeholder="Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-            <div class="social-links">
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact Me</h2>
+        <div class="contact-card">
+            <div class="contact-image">
+                <img src="assets/Screenshot 2025-02-05 at 11.35.36 AM.png" alt="Jahnavi Priya">
+            </div>
+            <div class="contact-content">
+                <p>"With a strong focus on designing robust, scalable, and data-driven applications, I am looking for opportunities in Software Development, Data Engineering, Data Analysis, and Machine Learning Engineering. Let's connect and innovate together!"  </p>              </p>
+                
+                <div class="social-links">
+                    <a href="https://github.com/jahnavip7" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/jahnavi-priya-bommareddy" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.instagram.com/jahnavi_bommareddy/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="mailto:jahnavip.bommareddy@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="tel:706-240-4968">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+
+                <a href="assets/SEJahnaviPriyaBommareddy_Resume.pdf" download class="resume-btn">See My Resume</a>
             </div>
         </div>
     </section>
