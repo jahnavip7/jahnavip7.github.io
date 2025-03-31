@@ -92,9 +92,9 @@ body::before {
 }
 
 .hero-image {
-        width: 60vw;  /* or 40vw, etc. */
+        width: 40vw;  /* or 40vw, etc. */
         height: auto; /* maintain aspect ratio */
-        max-width: 600px; /* cap it so it doesn't get too huge on big screens */
+        max-width: 400px; /* cap it so it doesn't get too huge on big screens */
         border-radius: 15px;
         overflow: hidden;
         background: var(--second-bg-color);
@@ -104,7 +104,7 @@ body::before {
 
 .hero-image img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
 }
 
